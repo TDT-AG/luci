@@ -1,0 +1,15 @@
+{
+	"luci-app-notification": {
+		"description": "Grant UCI access for luci-app-notification",
+		"read": {
+			"ubus": {
+				"system.notification": [ "list" ]
+			}
+		},
+		"write": {
+			"ubus": {
+				"system.notification": [ "remove", "flush" ]
+			}
+		}
+	}
+}
